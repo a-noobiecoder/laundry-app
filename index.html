@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laundry Pickup & Delivery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Laundry Pickup & Delivery</h1>
+    </header>
+    <main>
+        <section class="pickup-form">
+            <h2>Request a Pickup</h2>
+            <form id="pickupForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Enter your name" required>
+                
+                <label for="address">Address:</label>
+                <input type="text" id="address" placeholder="Enter your address" required>
+                
+                <label for="location">Your Location:</label>
+                <button type="button" onclick="getLocation()">Get Location</button>
+                <p id="location-status"></p>
+                
+                <button type="submit">Request Pickup</button>
+            </form>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
